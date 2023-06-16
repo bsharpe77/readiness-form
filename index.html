@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Readiness Assessment Form</title>
+  </head>
+  <body>
+    <main>
+      <div id="form">
+        <p class="intro">
+          Please complete the form below to automatically build a readiness plan
+          for your trainee.
+        </p>
+        <form action="results.php" method="post">
+          <p>
+            <label for="training-start">Start Date of Training: </label>
+            <input type="date" name="training-start" />
+          </p>
+          <p>
+            <label for="pace">
+              Pace of Training (# of weeks between start of training and start
+              of class):
+            </label>
+            <select name="pace" id="pace">
+              <option value="4">4 Weeks</option>
+              <option value="5">5 Weeks</option>
+              <option value="7">7 Weeks</option>
+            </select>
+          </p>
+          <p>
+            <label for="product">Product: </label>
+            <select name="product" id="product">
+              <option value="MCAT">MCAT</option>
+              <option value="LSAT">LSAT</option>
+            </select>
+          </p>
+          <p>
+            <label for="class-start">Start Date of Class: </label>
+            <input type="date" name="class-start" id="class-start" />
+          </p>
+          <!-- <p>
+            <label for="class-end"
+              >End Date of Class (last teaching session):
+            </label>
+            <input type="date" name="class-end" id="class-end" />
+          </p> -->
+          <p>
+            <label for="sessions">Sessions per week: </label>
+            <select name="sessions" id="sessions">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </p>
+          <div class="button">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

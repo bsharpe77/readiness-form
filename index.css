@@ -1,0 +1,134 @@
+* {
+  font-family: "PT Sans Narrow", sans-serif;
+  /* boilerplate */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+html,
+body {
+  background-color: var(--light-purple);
+  height: 100%;
+}
+
+body {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+:root {
+  --dark-purple: #7825ff;
+  --middle-purple: #6b32c5;
+  --light-purple: #b08df4;
+  --dark-grey: #294047;
+  --middle-grey: #5b6e74;
+  --light-gray: #819ba4;
+  --light-yellow: #fff0aa;
+  --bright-red: #ff465a;
+  --light-blue: #b4d2e6;
+}
+
+.intro {
+  margin-bottom: 50px;
+}
+
+#form {
+  border: 1px solid var(--middle-purple);
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background-color: white;
+  color: var(--middle-purple);
+  font-size: 14px;
+}
+
+#form p {
+  margin: 15px 0px;
+}
+
+.button {
+  text-align: center;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  width: 50%;
+  border: 1px solid var(--dark-purple);
+  text-transform: uppercase;
+  border-radius: 6px;
+  margin-top: 40px;
+  color: var(--dark-purple);
+  background-color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #b08df4;
+  color: white;
+}
+
+input[type="submit"]:active {
+  font-size: 13px;
+}
+
+input[type="date"],
+select {
+  padding: 6px;
+  font-family: monospace;
+  color: var(--middle-purple);
+  border-radius: 6px;
+  border: 1px solid var(--middle-purple);
+  margin-left: 6px;
+}
+
+/* results styles */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 120px); /*5 columns 120px wide*/
+  grid-template-rows: 152px repeat(12, 84px); /* 1 row 172px high, 12 rows 60px hight*/
+  gap: 5px;
+}
+
+.grid div {
+  border: 0px;
+  border-radius: 6px;
+}
+
+.table-head {
+  text-align: center;
+}
+
+.table-foot {
+  text-align: center;
+  margin: 36px;
+}
+
+.cell {
+  background-color: var(--light-blue);
+  padding: 12px;
+}
+
+.headers {
+  background-color: var(--light-gray);
+  padding: 12px;
+}
+
+.week12 {
+
+}
+
+.week11 {
+
+}
